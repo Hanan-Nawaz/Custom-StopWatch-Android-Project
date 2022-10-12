@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--the icon turns to green when the edit text is in focus-->
+    <item android:drawable="@drawable/focusedtime" android:state_focused="true" />
+
+    <item android:drawable="@drawable/time" android:state_focused="false" />
+</selector>

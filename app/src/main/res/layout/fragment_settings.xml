@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Settings"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ETSeconds"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_edit_text"
+            android:drawableStart="@drawable/customicon"
+            android:drawablePadding="12dp"
+            android:hint="Seconds in a Minute"
+            android:paddingStart="12dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:paddingEnd="12dp"
+            android:drawableLeft="@drawable/customicon" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Save"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TVError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:visibility="invisible"
+            android:text="Please Fill All Fields!!"
+            android:textColor="#FF0000"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+</ScrollView>

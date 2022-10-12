@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:id="@+id/DrawerLayout"
+    tools:context=".Activities.HomeScreen"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:orientation="vertical"
+            android:background="@drawable/line"
+            >
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                app:navigationIcon="@drawable/menu_icon"
+                android:layout_height="50dp"
+                android:background="@color/primary"
+                app:title="Home"
+                app:titleTextColor="@color/white"
+                android:id="@+id/Toolbar"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/Main"
+            >
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/menu"
+        android:id="@+id/NavigationView"
+        android:background="@color/white"
+        android:layout_gravity="start"
+        app:itemTextColor="@color/black"
+        app:itemIconTint="@color/primary"
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>
